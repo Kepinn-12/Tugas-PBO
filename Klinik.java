@@ -4,9 +4,7 @@ import java.util.List;
 
 public class Klinik {
     private String NamaKlinik ;
-
     private List<Dokter> DaftarDokter;
-
     private List<Ruangan> DaftarRuangan;
 
     Klinik (String NamaKlinik, List<Dokter> DaftarDokter){
@@ -31,12 +29,10 @@ public class Klinik {
             System.out.println("-" + dokter.getNama());
         }
 
-        System.out.println("");
-
         //komposisi
         System.out.println("\n Daftar Ruangan :");
         for(Ruangan ruangan: DaftarRuangan){
-            System.out.println("-" + ruangan.getNoRuangan());
+            System.out.println("-" + ruangan.getNomorRuangan());
         }
     }
 }

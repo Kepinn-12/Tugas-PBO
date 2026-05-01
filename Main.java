@@ -13,23 +13,19 @@ public class Main {
         DaftarDokter.add(d2);
         DaftarDokter.add(d3);
         
-        //Membuat objek KebunBinatang
-        //Daftar penjaga yang dimasukkan ke constructor
+        //Daftar Dokter yang dimasukkan ke constructor
         Klinik kl = new Klinik("Klinik NAHUB ", DaftarDokter);
         
-        //menampilkan informasi kebun binatang
         //aggregasi
         kl.tampilkanInfo();
         
+        //membuat objek pasien
         Pasien p1 = new Pasien("Leon", "Tipes");
-        Pasien p2 = new Pasien("Wafi", "Flu")
+        Pasien p2 = new Pasien("Wafi", "Flu") ;
         
-        //asosiasi
         //dokter memeriksa Pasien 
-        System.out.println("\nAsosiasi");
-        
         System.out.println("\nAktivitas Dokter:");
-        d1.periksaPasien(p1);
+        d1.PeriksaPasien(p1);
         d2.PeriksaPasien(p2);
     }
 }
