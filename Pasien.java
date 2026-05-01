@@ -3,7 +3,6 @@ package minggu10;
 public class Pasien {
     private String Nama, Penyakit ;
 
-    
     Pasien (String Nama, String Penyakit){
         this.Nama = Nama ;
         this.Penyakit = Penyakit;

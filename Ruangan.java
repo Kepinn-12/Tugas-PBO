@@ -1,13 +1,13 @@
 package minggu10;
 
 public class Ruangan {
-    private String NoRuangan ;
+    private String NomorRuangan ;
 
-    Ruangan(String NoRuangan){
-        this.NoRuangan = NoRuangan;
+    Ruangan(String NomorRuangan){
+        this.NomorRuangan = NomorRuangan;
     }
 
-    public String getNoRuangan() {
-        return NoRuangan;
+    public String getNomorRuangan() {
+        return NomorRuangan;
     }
 } 

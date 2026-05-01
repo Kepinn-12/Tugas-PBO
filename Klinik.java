@@ -13,31 +13,30 @@ public class Klinik {
         this.NamaKlinik = NamaKlinik;
 
         this.DaftarDokter = DaftarDokter ;
- 
+
         this.DaftarRuangan = new ArrayList<>();
-        this.DaftarRuangan.add(new Ruangan("Mawar"));
-        this.DaftarRuangan.add(new Ruangan("Tulip"));
-        this.DaftarRuangan.add(new Ruangan("Anggrek"));
+        this.DaftarRuangan.add(new Ruangan("R-001"));
+        this.DaftarRuangan.add(new Ruangan("R-002"));
+        this.DaftarRuangan.add(new Ruangan("R-003"));
     }
 
     void tampilkanInfo(){
         System.out.println("Nama klinik : " + NamaKlinik );
+        
+        System.out.println();
+
         //agregasi
         System.out.println("Nama Dokter :");
         for(Dokter dokter : DaftarDokter){
             System.out.println("-" + dokter.getNama());
         }
+
         System.out.println("");
+
         //komposisi
         System.out.println("\n Daftar Ruangan :");
         for(Ruangan ruangan: DaftarRuangan){
             System.out.println("-" + ruangan.getNoRuangan());
         }
-
     }
-
-
-
-
-
 }
